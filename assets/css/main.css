@@ -5,17 +5,10 @@
 body{
 @apply bg-navy text-slate text-xl;
 font-family: "Calibre",sans-serif;
-
-/* // '--font-sans': '"Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif', */
-
 }
-/* margin: 0px;
-    width: 100%;
-    min-height: 100%;
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-    background-color: var(--navy);
-    color: var(--slate);
-    font-family: var(--font-sans);
-    font-size: var(--fz-xl);
-    line-height: 1.3; */
+.navbar-item{
+    @apply p-2.5 cursor-pointer inline-block hover:text-green text-light-slate;
+}
+.btn-primary {
+    @apply text-xs px-4 py-3 bg-transparent text-green border border-green rounded-md ml-4 hover:bg-green-tint active:bg-green-tint;
+}
