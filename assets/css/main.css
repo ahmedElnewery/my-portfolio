@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+@apply bg-navy text-slate text-xl;
+font-family: "Calibre",sans-serif;
+
+/* // '--font-sans': '"Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif', */
+
+}
+/* margin: 0px;
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--navy);
+    color: var(--slate);
+    font-family: var(--font-sans);
+    font-size: var(--fz-xl);
+    line-height: 1.3; */
