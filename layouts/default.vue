@@ -1,49 +1,156 @@
 
 
 <script>
-import logo from '~~/components/logo.vue';
-import metaData from './../constants/constants'
+import Facebook from "~~/components/icons/Facebook.vue";
+import Github from "~~/components/icons/Github.vue";
+import LinkedIn from "~~/components/icons/LinkedIn.vue";
+import Twitter from "~~/components/icons/Twitter.vue";
+import logo from "~~/components/logo.vue";
+import metaData from "./../constants/constants";
 export default {
-  components: { logo },
-  computed:{
-    navbar(){
-        return metaData.navbar
-    }
-  }
-  };
+  components: { logo, Twitter, Github, LinkedIn, Facebook },
+  computed: {
+    navbar() {
+      return metaData.navbar;
+    },
+  },
+};
 </script>
 <template>
-  <div>
-    <nav
-      class="
-        flex
-        items-center
-        justify-between
-        container
-        mx-auto
-        py-4
-        px-12
-        h-24
-      "
-    >
-      <NuxtLink to="/" class="text-green w-10 h-10 flex-shrink-0"
-        ><Logo/>
-      </NuxtLink>
-    <div class="flex items-center">
-      <ul class="flex items-center text-sm font-mono">
-        <li class="mx-2.5 " v-for="(item,i) in navbar" :key="i">
-            <NuxtLink :to="item.path" class="navbar-item">{{item.label}}</NuxtLink> 
+  <div class="min-h-screen h-[2000px]">
+    <header class="w-full fixed top-0">
+      <nav
+        class="
+          flex
+          items-center
+          justify-between
+          container
+          mx-auto
+          py-4
+          px-12
+          h-24
+        "
+      >
+        <NuxtLink to="/" class="text-green w-10 h-10 flex-shrink-0"
+          ><Logo />
+        </NuxtLink>
+        <div class="md:flex items-center hidden">
+          <ul class="flex items-center text-sm font-mono">
+            <li class="mx-2.5" v-for="(item, i) in navbar" :key="i">
+              <NuxtLink :to="item.path" class="navbar-item">{{
+                item.label
+              }}</NuxtLink>
+            </li>
+          </ul>
+          <button class="btn-primary">Resume</button>
+        </div>
+      </nav>
+      <div class="container">
+        <slot />
+      </div>
+    </header>
+    <div class="w-10 fixed left-10 bottom-0">
+      <ul
+        class="
+          flex flex-col
+          items-center
+          text-sm
+          after:w-px after:h-24 after:bg-light-slate after:block
+        "
+      >
+        <li class="">
+          <a
+            class="
+              p-2.5
+              block
+              cursor-pointer
+              hover:text-green
+              transform
+              hover:-translate-y-0.5
+              transition-all
+            "
+          >
+            <Github
+          /></a>
+        </li>
+        <li>
+          <a
+            class="
+              p-2.5
+              block
+              cursor-pointer
+              hover:text-green
+              transform
+              hover:-translate-y-0.5
+              transition-all
+            "
+          >
+            <Twitter
+          /></a>
+        </li>
+        <li>
+          <a
+            class="
+              p-2.5
+              block
+              cursor-pointer
+              hover:text-green
+              transform
+              hover:-translate-y-0.5
+              transition-all
+            "
+          >
+            <LinkedIn
+          /></a>
+        </li>
+        <li>
+          <a
+            class="
+              p-2.5
+              block
+              cursor-pointer
+              hover:text-green
+              transform
+              hover:-translate-y-0.5
+              transition-all
+              mb-8
+            "
+          >
+            <Facebook
+          /></a>
         </li>
       </ul>
-    <button class="btn-primary ">
-        Resume
-    </button>
     </div>
-    </nav>
-    <div class="container">
-      <slot />
+    <div class="w-10 fixed right-10 bottom-0">
+      <ul
+        class="
+          flex flex-col
+          items-center
+          text-sm
+          after:w-px after:h-24 after:bg-light-slate after:block
+        "
+      >
+        <li class="">
+          <a
+            class="
+              p-2.5
+              block
+              cursor-pointer
+              hover:text-green
+              transform
+              hover:-translate-y-0.5
+              transition-all
+              vertical-mode
+              mb-6
+            "
+            href="mailto:ahmedm.elnewery@gmail.com"
+          >
+            ahmedm.elnewery@gmail.com</a
+          >
+        </li>
+      </ul>
     </div>
   </div>
 </template>
-<style>
+<style >
 </style>

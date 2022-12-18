@@ -7,4 +7,9 @@ export default defineNuxtConfig({
           autoprefixer: {},
         },
       },
+   app:{
+    head:{
+      title:"Ahmed El Newery"
+    }
+   }   
 })

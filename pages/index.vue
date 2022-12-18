@@ -1,5 +1,5 @@
 <template>
-<div>
-    new page
-</div>
+<main class="">
+   <div class=""></div>
+</main>
 </template>

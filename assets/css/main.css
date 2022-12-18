@@ -3,12 +3,17 @@
 @tailwind utilities;
 
 body{
-@apply bg-navy text-slate text-xl;
+@apply bg-navy text-slate text-xl relative;
 font-family: "Calibre",sans-serif;
+
 }
 .navbar-item{
-    @apply p-2.5 cursor-pointer inline-block hover:text-green text-light-slate;
+    @apply p-2.5 cursor-pointer inline-block hover:text-green text-light-slate transition-colors;
 }
 .btn-primary {
-    @apply text-xs px-4 py-3 bg-transparent text-green border border-green rounded-md ml-4 hover:bg-green-tint active:bg-green-tint;
+    @apply text-xs px-4 py-3 bg-transparent text-green border border-green rounded-md ml-4 hover:bg-green-tint active:bg-green-tint transition-colors;
+}
+.vertical-mode {
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
 }
