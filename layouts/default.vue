@@ -17,15 +17,13 @@ export default {
 };
 </script>
 <template>
-  <div class="min-h-screen h-[2000px]">
-    <header class="w-full fixed top-0">
+  <div class="min-h-screen ">
+    <header class="w-full sticky top-0 ">
       <nav
         class="
           flex
           items-center
           justify-between
-          container
-          mx-auto
           py-4
           px-12
           h-24
@@ -35,27 +33,25 @@ export default {
           ><Logo />
         </NuxtLink>
         <div class="md:flex items-center hidden">
-          <ul class="flex items-center text-sm font-mono">
+          <ul class="flex items-center text-13px font-mono">
             <li class="mx-2.5" v-for="(item, i) in navbar" :key="i">
               <NuxtLink :to="item.path" class="navbar-item">{{
                 item.label
               }}</NuxtLink>
             </li>
           </ul>
-          <button class="btn-primary">Resume</button>
+          <button class="btn-primary btn-sm  ml-4">Resume</button>
         </div>
       </nav>
-      <div class="container">
-        <slot />
-      </div>
+     
     </header>
-    <div class="w-10 fixed left-10 bottom-0">
+    <div class="w-10 fixed left-10 bottom-0 md:block hidden">
       <ul
         class="
           flex flex-col
           items-center
           text-sm
-          after:w-px after:h-24 after:bg-light-slate after:block
+          after:w-px after:h-32 after:bg-light-slate after:block
         "
       >
         <li class="">
@@ -121,13 +117,13 @@ export default {
         </li>
       </ul>
     </div>
-    <div class="w-10 fixed right-10 bottom-0">
+    <div class="w-10 fixed right-10 bottom-0 md:block hidden">
       <ul
         class="
           flex flex-col
           items-center
           text-sm
-          after:w-px after:h-24 after:bg-light-slate after:block
+          after:w-px after:h-32 after:bg-light-slate after:block
         "
       >
         <li class="">
@@ -150,6 +146,11 @@ export default {
         </li>
       </ul>
     </div>
+     <div class="w-100 min-h-screen py-0 px-12 md:px-28 xl:px-32 2xl:px-48 w-full h-full p-t-[100px]">
+        <main>
+        <slot />
+        </main>
+      </div>
   </div>
 </template>
 <style >

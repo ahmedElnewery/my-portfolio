@@ -11,9 +11,18 @@ font-family: "Calibre",sans-serif;
     @apply p-2.5 cursor-pointer inline-block hover:text-green text-light-slate transition-colors;
 }
 .btn-primary {
-    @apply text-xs px-4 py-3 bg-transparent text-green border border-green rounded-md ml-4 hover:bg-green-tint active:bg-green-tint transition-colors;
+    @apply  bg-transparent text-green border border-green rounded-md hover:bg-green-tint active:bg-green-tint transition-colors;
+}
+.btn-sm{
+    @apply text-xs px-4 py-3
+}
+.btn-lg {
+    @apply text-sm px-7 py-5 
 }
 .vertical-mode {
     -webkit-writing-mode: vertical-rl;
     writing-mode: vertical-rl;
+}
+.section{
+   @apply max-w-[1000px] mx-auto;
 }
