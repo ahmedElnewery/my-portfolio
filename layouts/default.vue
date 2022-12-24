@@ -6,12 +6,12 @@ import Github from "~~/components/icons/Github.vue";
 import LinkedIn from "~~/components/icons/LinkedIn.vue";
 import Twitter from "~~/components/icons/Twitter.vue";
 import logo from "~~/components/logo.vue";
-import metaData from "./../constants/constants";
+import {navbar} from "./../constants/constants";
 export default {
   components: { logo, Twitter, Github, LinkedIn, Facebook },
   computed: {
     navbar() {
-      return metaData.navbar;
+      return navbar;
     },
   },
 };
@@ -147,7 +147,7 @@ export default {
       </ul>
     </div>
      <div class="w-100 min-h-screen py-0 px-12 md:px-28 xl:px-32 2xl:px-48 w-full h-full p-t-[100px]">
-        <main>
+        <main class="min-h-[2000px]">
         <slot />
         </main>
       </div>

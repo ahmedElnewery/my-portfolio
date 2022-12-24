@@ -26,3 +26,21 @@ font-family: "Calibre",sans-serif;
 .section{
    @apply max-w-[1000px] mx-auto;
 }
+.tab {
+   @apply text-sm px-5 py-4 cursor-pointer hover:bg-light-navy hover:text-green  transition-all border-l border-lightest-navy ;
+}
+.tab.--active{
+    @apply border-green  !important;
+}
+
+
+/*fade transition*/
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}

@@ -1,3 +1,5 @@
+<script setup>
+</script>
 <template>
    <section class="section  ">
     <div class="w-full mt-20">
@@ -14,8 +16,5 @@
         </div>
     </div>
    </section>
-   <section class="section mt-24">
-        <h2 class="text-2xl flex items-center  relative after:h-px after:w-72 after:bg-lightest-navy  after:block after:ml-6 ">About Me</h2>
-        
-   </section>
+   <Experience/>
 </template>
