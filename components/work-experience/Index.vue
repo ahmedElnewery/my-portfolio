@@ -3,7 +3,7 @@
 <script setup>
 import {experiences} from "./../../constants/constants";
 import {format} from "date-fns";
-
+import BriefCase from './../icons/BriefCase.vue'
 const state = reactive({
   selectedCompanyId: "1",
 });
@@ -45,21 +45,7 @@ const updateSelectedCompanyId = (id) => {
 </script>
 <template>
   <section class="section mt-24">
-    <div class="flex items-center gap-x-8 mb-10">
-      <span class="text-green"><IconsBriefCase /></span>
-      <h2
-        class="
-          text-2xl
-          flex
-          items-center
-          text-lightest-slate
-          relative
-          after:h-px after:w-72 after:bg-lightest-navy after:block after:ml-6
-        "
-      >
-        Where I’ve Worked
-      </h2>
-    </div>
+    <BaseTitle :icon="BriefCase">Where I’ve Worked </BaseTitle>
     <div class="flex gap-x-8">
       <div>
         <ul class="font-mono flex flex-col">
