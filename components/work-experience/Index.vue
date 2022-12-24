@@ -46,7 +46,7 @@ const updateSelectedCompanyId = (id) => {
 <template>
   <section class="section mt-24">
     <div class="flex items-center gap-x-8 mb-10">
-      <!-- <span class="text-green"><BriefCase /></span> -->
+      <span class="text-green"><IconsBriefCase /></span>
       <h2
         class="
           text-2xl

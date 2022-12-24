@@ -16,5 +16,6 @@
         </div>
     </div>
    </section>
-   <Experience/>
+   <WorkExperience/>
+   <FeaturedProjects/>
 </template>

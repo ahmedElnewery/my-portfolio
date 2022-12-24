@@ -1,20 +1,7 @@
 
 
-<script>
-import Facebook from "~~/components/icons/Facebook.vue";
-import Github from "~~/components/icons/Github.vue";
-import LinkedIn from "~~/components/icons/LinkedIn.vue";
-import Twitter from "~~/components/icons/Twitter.vue";
-import logo from "~~/components/logo.vue";
+<script setup>
 import {navbar} from "./../constants/constants";
-export default {
-  components: { logo, Twitter, Github, LinkedIn, Facebook },
-  computed: {
-    navbar() {
-      return navbar;
-    },
-  },
-};
 </script>
 <template>
   <div class="min-h-screen ">
@@ -66,7 +53,7 @@ export default {
               transition-all
             "
           >
-            <Github
+            <IconsGithub
           /></a>
         </li>
         <li>
@@ -81,7 +68,7 @@ export default {
               transition-all
             "
           >
-            <Twitter
+            <IconsTwitter
           /></a>
         </li>
         <li>
@@ -96,7 +83,7 @@ export default {
               transition-all
             "
           >
-            <LinkedIn
+            <IconsLinkedIn
           /></a>
         </li>
         <li>
@@ -112,7 +99,7 @@ export default {
               mb-8
             "
           >
-            <Facebook
+            <IconsFacebook
           /></a>
         </li>
       </ul>
