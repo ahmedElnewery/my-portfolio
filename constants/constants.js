@@ -38,7 +38,7 @@ export const projects = [
         title: "Trello Clone",
         desc: "Trello is a collaboration tool that organizes your projects into boards. In one glance, Trello tells you what's being worked on,   who's working on what, and where something is in a process.",
         githubUrl: "https://github.com/ahmedElnewery/trello-clone/",
-        demoUrl: "https://mario130.github.io/trello-clone/welcome-page/welcome.html",
+        url: "https://mario130.github.io/trello-clone/welcome-page/welcome.html",
         tags: ["Jquery","Boostrap","DnD"]
     },
     {
@@ -46,7 +46,7 @@ export const projects = [
         title: "Buger builder",
         desc: "Design and develop app that users can choose their favorite burger and order it. ",
         githubUrl:"https://github.com/ahmedElnewery/buger-builder",
-        demoUrl: "https://ahmedelnewery.github.io/",
+        url: "https://ahmedelnewery.github.io/",
         tags: ["React","Redux","Firebase"]
     },
     {
@@ -54,7 +54,7 @@ export const projects = [
         title: "Buger builder",
         desc: "Design and develop app that users can choose their favorite burger and order it. ",
         githubUrl:"https://github.com/ahmedElnewery/buger-builder",
-        demoUrl: "https://ahmedelnewery.github.io/",
+        url: "https://ahmedelnewery.github.io/",
         tags: ["React","Redux","Firebase"]
     },
     {
@@ -62,7 +62,7 @@ export const projects = [
         title: "Buger builder",
         desc: "Design and develop app that users can choose their favorite burger and order it. ",
         githubUrl:"https://github.com/ahmedElnewery/buger-builder",
-        demoUrl: "https://ahmedelnewery.github.io/",
+        url: "https://ahmedelnewery.github.io/",
         tags: ["React","Redux","Firebase"]
     },
 ]

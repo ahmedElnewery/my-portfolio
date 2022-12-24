@@ -18,4 +18,6 @@
    </section>
    <WorkExperience/>
    <FeaturedProjects/>
+   <ContactUs/>
+   <Footer/>
 </template>

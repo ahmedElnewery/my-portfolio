@@ -22,6 +22,9 @@ import Code from './../icons/Code.vue'
             justify-between
             items-start
             min-h-[300px]
+            transform
+            hover:-translate-y-2
+            transition
           "
         >
           <div>
@@ -31,7 +34,7 @@ import Code from './../icons/Code.vue'
               </div>
               <div class="flex items-center gap-x-2 cursor-pointer">
                 <a
-                  class="px-1.5 py-1 hover:text-green"
+                  class="px-1.5 py-1 hover:text-green relative z-10"
                   :href="project.githubUrl"
                    v-if="project.githubUrl"
 
@@ -41,13 +44,14 @@ import Code from './../icons/Code.vue'
                   <IconsGithub />
                 </a>
                 <a
-                  class="px-1.5 py-1 hover:text-green cursor-pointer"
-                  :href="project.demoUrl"
-                  v-if="project.demoUrl"
+                  class="px-1.5 py-1 hover:text-green cursor-pointer relative z-10"
+                  :href="project.url"
+                  v-if="project.url"
                   target="blank"
                 >
                   <IconsExternal />
                 </a>
+
               </div>
             </div>
             <h3 class="capitalize text-xl text-lightest-slate mb-2.5">
@@ -64,6 +68,7 @@ import Code from './../icons/Code.vue'
               <li v-for="(tag, i) in project.tags" :key="i">{{ tag }}</li>
             </ul>
           </div>
+          <a class="absolute inset-0 cursor-pointer"  target="blank" :href="project.url"></a>
         </div>
       </div>
     </div>
