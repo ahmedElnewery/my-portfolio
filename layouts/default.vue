@@ -134,7 +134,7 @@ import {navbar} from "./../constants/constants";
       </ul>
     </div>
      <div class="w-100 min-h-screen py-0 px-12 md:px-28 xl:px-32 2xl:px-48 w-full h-full p-t-[100px]">
-        <main class="min-h-[2000px]">
+        <main>
         <slot />
         </main>
       </div>
