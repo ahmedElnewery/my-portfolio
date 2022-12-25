@@ -1,8 +1,8 @@
 export const navbar = [
-    { label: "About", path: "/" },
-    { label: "Experience", path: "/" },
-    { label: "Work", path: "/" },
-    { label: "Contact", path: "/" },
+    { label: "About", path: "/#about" },
+    { label: "Experience", path: "/#experience" },
+    { label: "projects", path: "/#projects" },
+    { label: "Contact", path: "/#contact" },
 ]
 export const experiences = [
     {

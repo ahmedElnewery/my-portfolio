@@ -1,7 +1,7 @@
 <script setup>
 </script>
 <template>
-  <section class="section mt-24">
+  <section class="section mt-24" id="contact">
     <div class="flex items-center justify-center text-center">
       <div class="w-[500px]">
         <div class="flex items-center justify-center">

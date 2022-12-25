@@ -5,7 +5,7 @@ import { projects } from "./../../constants/constants.js";
 import Code from './../icons/Code.vue'
 </script>
 <template>
-  <section class="section mt-24">
+  <section class="section mt-24" id="projects">
     <BaseTitle :icon="Code"> Featured Projects </BaseTitle>
     <div class="grid grid-cols-3 gap-4">
       <div class="" v-for="project in projects" :key="project.id">

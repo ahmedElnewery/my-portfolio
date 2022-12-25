@@ -6,7 +6,7 @@ import profileImg from './../../assets/img/profile_photo.jpeg'
 import {skills} from './../../constants/constants.js'
 </script>
 <template>
-  <section class="section mt-24">
+  <section class="section mt-24" id="about">
     <BaseTitle :icon="Message">About Me </BaseTitle>
     <div class="grid grid-cols-3 gap-x-5">
       <div class="col-span-2">
