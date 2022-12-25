@@ -32,37 +32,45 @@ export const experiences = [
     },
 ]
 export const projects = [
-    
+
     {
         id: "1",
         title: "Trello Clone",
         desc: "Trello is a collaboration tool that organizes your projects into boards. In one glance, Trello tells you what's being worked on,   who's working on what, and where something is in a process.",
         githubUrl: "https://github.com/ahmedElnewery/trello-clone/",
         url: "https://mario130.github.io/trello-clone/welcome-page/welcome.html",
-        tags: ["Jquery","Boostrap","DnD"]
+        tags: ["Jquery", "Boostrap", "DnD"]
     },
     {
         id: "2",
         title: "Buger builder",
         desc: "Design and develop app that users can choose their favorite burger and order it. ",
-        githubUrl:"https://github.com/ahmedElnewery/buger-builder",
+        githubUrl: "https://github.com/ahmedElnewery/buger-builder",
         url: "https://ahmedelnewery.github.io/",
-        tags: ["React","Redux","Firebase"]
+        tags: ["React", "Redux", "Firebase"]
     },
     {
         id: "3",
         title: "Buger builder",
         desc: "Design and develop app that users can choose their favorite burger and order it. ",
-        githubUrl:"https://github.com/ahmedElnewery/buger-builder",
+        githubUrl: "https://github.com/ahmedElnewery/buger-builder",
         url: "https://ahmedelnewery.github.io/",
-        tags: ["React","Redux","Firebase"]
+        tags: ["React", "Redux", "Firebase"]
     },
     {
         id: "4",
         title: "Buger builder",
         desc: "Design and develop app that users can choose their favorite burger and order it. ",
-        githubUrl:"https://github.com/ahmedElnewery/buger-builder",
+        githubUrl: "https://github.com/ahmedElnewery/buger-builder",
         url: "https://ahmedelnewery.github.io/",
-        tags: ["React","Redux","Firebase"]
+        tags: ["React", "Redux", "Firebase"]
     },
+]
+export const skills = [
+    "Javascript (Es6 and beyond)",
+    "React",
+    "Vue",
+     "State management (Redux, Vuex)",
+    "Server Side Rendering (Next , Nuxt)",
+    "Unit Testing (Jest)"
 ]

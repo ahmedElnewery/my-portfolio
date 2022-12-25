@@ -64,8 +64,8 @@ import Code from './../icons/Code.vue'
             </div>
           </div>
           <div>
-            <ul class="flex items-center gap-2 text-xs">
-              <li v-for="(tag, i) in project.tags" :key="i">{{ tag }}</li>
+            <ul class="flex items-center gap-2  font-mono  text-xs">
+              <li  v-for="(tag, i) in project.tags" :key="i">{{ tag }}</li>
             </ul>
           </div>
           <a class="absolute inset-0 cursor-pointer"  target="blank" :href="project.url"></a>

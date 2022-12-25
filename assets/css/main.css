@@ -5,6 +5,7 @@
 body{
 @apply bg-navy text-slate text-xl relative;
 font-family: "Calibre",sans-serif;
+-webkit-font-smoothing: antialiased;
 
 }
 .navbar-item{
@@ -33,7 +34,9 @@ font-family: "Calibre",sans-serif;
     @apply border-green  !important;
 }
 
-
+.list-item {
+   @apply text-base relative pl-6 before:left-0 before:text-green  before:content-['▹'] before:absolute;
+}
 /*fade transition*/
 .fade-enter-active,
 .fade-leave-active {

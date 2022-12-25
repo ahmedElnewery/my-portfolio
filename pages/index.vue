@@ -16,6 +16,7 @@
         </div>
     </div>
    </section>
+   <AboutMe/>
    <WorkExperience/>
    <FeaturedProjects/>
    <ContactUs/>
