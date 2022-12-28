@@ -11,5 +11,9 @@ export default defineNuxtConfig({
     head:{
       title:"Ahmed El Newery"
     }
-   }   
+   },
+   plugins:[
+    { src: '~/plugins/particles', ssr: false }
+
+   ]   
 })

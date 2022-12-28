@@ -29,10 +29,10 @@ import {skills} from './../../constants/constants.js'
       </div>
 
       <div class="col-span-1">
-        <div class="relative">
+        <!-- <div class="relative">
         <img :src="profileImg"/>
         <div class="absolute inset-0 bg-green opacity-30 hover:opacity-0 mix-blend-screen"></div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
