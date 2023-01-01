@@ -14,6 +14,9 @@ font-family: "Calibre",sans-serif;
 .navbar-item{
     @apply p-2.5 cursor-pointer inline-block hover:text-green text-light-slate transition-colors;
 }
+.router-link-active, .router-link-exact-active {
+    @apply text-green 
+} 
 .btn-primary {
     @apply  bg-transparent text-green border border-green rounded-md hover:bg-green-tint active:bg-green-tint transition-colors;
 }
