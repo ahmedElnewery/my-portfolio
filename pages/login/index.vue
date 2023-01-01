@@ -1,18 +1,20 @@
 <script setup>
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { app } from "./../../config/firebase";
-const route = useRoute()
+const route = useRoute();
 const state = reactive({
   email: "",
   password: "",
 });
+
 const user = inject("user", () => {});
 const token = inject("token", "");
-const updateUser = inject("updateUser", ()=>{});
+const updateUser = inject("updateUser", () => {});
 
 const handleLogin = (e) => {
   const auth = getAuth(app);
   const { email, password } = state;
+ 
   signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
       // Signed in
@@ -22,17 +24,16 @@ const handleLogin = (e) => {
       localStorage.setItem(
         "token",
         JSON.stringify(firebaseUser.stsTokenManager.accessToken)
-      )
-      updateUser(firebaseUser)
-        if(userCredential){
-            navigateTo("/admin")
-        }
-
+      );
+      updateUser(firebaseUser);
+      if (userCredential) {
+        navigateTo("/admin");
+      }
     })
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
-     console.log({error})
+      alert(errorMessage);
     });
 };
 
@@ -48,7 +49,7 @@ definePageMeta({
         <form @submit.prevent="handleLogin">
           <div class="mb-8">
             <label for="email" class="label">Email</label>
-            <input id="email" class="input" type="text" v-model="state.email" />
+            <input id="email" class="input" type="text" v-model="state.email" required/>
           </div>
           <div class="mb-8">
             <label for="password" class="label">password</label>
@@ -57,6 +58,8 @@ definePageMeta({
               class="input"
               type="password"
               v-model="state.password"
+              required
+            
             />
           </div>
           <div class="flex items-center justify-center">

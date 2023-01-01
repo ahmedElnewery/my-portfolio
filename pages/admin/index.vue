@@ -1,11 +1,6 @@
 <script setup > 
 
-// const user = computed(()=>{
-//   if(process.client){
-//     return JSON.parse(localStorage.getItem("user")).email
-//   }
-// })
- const  user = inject("user",null)
+const  user = inject("user",null)
 
 
 
@@ -17,7 +12,7 @@ definePageMeta({
 <template>
   <NuxtLayout name="admin">
     <div>
-    <div v-if="user">hello {{user.email}}</div>
+    <p v-if="user">hello {{user.email}}</p>
     <div v-else>
       please login ..
     </div>
