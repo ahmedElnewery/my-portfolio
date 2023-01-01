@@ -13,7 +13,8 @@ export default defineNuxtConfig({
     }
    },
    plugins:[
-    { src: '~/plugins/particles', ssr: false }
+    { src: '~/plugins/particles', ssr: false },
+    { src: '~/plugins/store', ssr: false }
 
    ]   
 })

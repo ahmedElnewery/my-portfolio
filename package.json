@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "date-fns": "^2.29.3",
+    "firebase": "^9.15.0",
     "tsparticles": "^2.7.1",
     "vue3-particles": "^2.7.1"
   }

@@ -1,5 +1,8 @@
 <script setup>
 import { loadFull } from "tsparticles";
+
+
+// particles
 const particlesInit = async (engine) => {
   await loadFull(engine);
 };

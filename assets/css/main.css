@@ -40,6 +40,12 @@ font-family: "Calibre",sans-serif;
 .list-item {
    @apply text-base relative pl-6 before:left-0 before:text-green  before:content-['▹'] before:absolute;
 }
+.input {
+    @apply block w-full py-2 px-4 rounded-md text-lg text-navy
+}
+.label {
+   @apply inline-block mb-2 capitalize
+}
 /*fade transition*/
 .fade-enter-active,
 .fade-leave-active {
