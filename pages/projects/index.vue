@@ -1,0 +1,3 @@
+<template>
+     <FeaturedProjects/>
+</template>

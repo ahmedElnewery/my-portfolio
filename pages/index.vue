@@ -21,12 +21,5 @@
     </div>
    </section>
 
-   
-
-   <AboutMe/>
-   <WorkExperience/>
-   <FeaturedProjects/>
-   <ContactUs/>
-   <Footer/>
     </div>
 </template>

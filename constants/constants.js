@@ -1,14 +1,14 @@
 import Message from './../components/icons/Message.vue'
 import BriefCase from './../components/icons/BriefCase.vue'
 import Code from './../components/icons/Code.vue'
-import External from './../components/icons/External.vue'
+import Send from './../components/icons/Send.vue'
 import Home from './../components/icons/Home.vue'
 export const navbar = [
     { label: "Home", path: "/",icon:Home },
     { label: "About", path: "/about",icon:Message },
     { label: "Experience", path: "/experience",icon:BriefCase },
     { label: "projects", path: "/projects",icon:Code },
-    { label: "Contact", path: "/contact",icon:External },
+    { label: "Contact", path: "/contact",icon:Send },
 ]
 export const experiences = [
     {
