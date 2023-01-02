@@ -1,8 +1,8 @@
 <script setup>
 </script>
 <template>
-  <section class="section mt-24" id="contact">
-    <div class="flex items-center justify-center text-center">
+  <section class="section w-full" id="contact">
+    <div class="  flex items-center justify-center text-center">
       <div class="w-[500px]">
         <div class="flex items-center justify-center">
         <div class="flex items-baseline gap-x-4">

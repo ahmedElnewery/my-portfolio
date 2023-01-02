@@ -5,9 +5,9 @@ import { projects } from "./../../constants/constants.js";
 import Code from './../icons/Code.vue'
 </script>
 <template>
-  <section class="section mt-24" id="projects">
+  <section class="section" id="projects">
     <BaseTitle :icon="Code"> Featured Projects </BaseTitle>
-    <div class="grid grid-cols-3 gap-4">
+    <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4">
       <div class="" v-for="project in projects" :key="project.id">
         <div
           class="
@@ -27,7 +27,7 @@ import Code from './../icons/Code.vue'
             transition
           "
         >
-          <div>
+          <div class="w-full">
             <div class="w-full flex items-center justify-between mb-8">
               <div class="text-green">
                 <IconsFolder />

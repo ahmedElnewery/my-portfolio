@@ -124,10 +124,10 @@ const particlesInit = async (engine) => {
           md:px-48
           w-full
           h-full
-          p-t-[100px]
+          flex items-center
         "
       >
-        <main>
+        <main class="w-full">
           <slot />
         </main>
       </div>

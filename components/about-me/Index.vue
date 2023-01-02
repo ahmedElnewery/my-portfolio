@@ -6,11 +6,11 @@ import profileImg from './../../assets/img/profile_photo.jpeg'
 import {skills} from './../../constants/constants.js'
 </script>
 <template>
-  <section class="section mt-24" id="about">
+  <section class="section " id="about">
     <BaseTitle :icon="Message">About Me </BaseTitle>
-    <div class="grid grid-cols-3 gap-x-5">
-      <div class="col-span-2">
-        <div class="">
+    <div class="w-full">
+      <div class=" w-2/3">
+        <div >
         <p class="mb-3" >
             
         Hello! My name is ElNewery.</p>
@@ -29,10 +29,7 @@ import {skills} from './../../constants/constants.js'
       </div>
 
       <div class="col-span-1">
-        <!-- <div class="relative">
-        <img :src="profileImg"/>
-        <div class="absolute inset-0 bg-green opacity-30 hover:opacity-0 mix-blend-screen"></div>
-        </div> -->
+      
       </div>
     </div>
   </section>

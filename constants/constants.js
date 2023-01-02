@@ -57,19 +57,19 @@ export const projects = [
     },
     {
         id: "3",
-        title: "Buger builder",
-        desc: "Design and develop app that users can choose their favorite burger and order it. ",
-        githubUrl: "https://github.com/ahmedElnewery/buger-builder",
-        url: "https://ahmedelnewery.github.io/",
-        tags: ["React", "Redux", "Firebase"]
+        title: "Social media app",
+        desc: "Interact with your friends",
+        githubUrl: "https://github.com/ahmedElnewery/social-media-app",
+        url: "",
+        tags: ["React", "socket io"]
     },
     {
         id: "4",
-        title: "Buger builder",
-        desc: "Design and develop app that users can choose their favorite burger and order it. ",
-        githubUrl: "https://github.com/ahmedElnewery/buger-builder",
-        url: "https://ahmedelnewery.github.io/",
-        tags: ["React", "Redux", "Firebase"]
+        title: "Upwork",
+        desc: "Connect clients with freelancers ",
+        githubUrl: "https://github.com/ahmedElnewery/upwork-clone",
+        url: "upwork-4.web.app",
+        tags: ["React", "Node js","Mongodb"]
     },
 ]
 export const skills = [

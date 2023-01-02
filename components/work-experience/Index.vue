@@ -44,7 +44,7 @@ const updateSelectedCompanyId = (id) => {
 };
 </script>
 <template>
-  <section class="section mt-24" id="experience">
+  <section class="section " id="experience">
     <BaseTitle :icon="BriefCase">Where I’ve Worked </BaseTitle>
     <div class="flex gap-x-8">
       <div>

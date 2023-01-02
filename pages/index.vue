@@ -4,7 +4,6 @@
 </script>
 <template>
 
-    <div class="relative z-30">
    <section class="section  ">
     <div class="w-full mt-20">
         <div class="mb-8">
@@ -16,10 +15,10 @@
            <p> I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products .</p>
         </div>
         <div>
-            <a class="inline-block btn-primary btn-lg tracking-wide">Check out My CV !</a>
+            <a class="inline-block btn-primary btn-lg tracking-wide cursor-pointer">Check out My CV !</a>
         </div>
     </div>
    </section>
 
-    </div>
+
 </template>
