@@ -9,7 +9,8 @@ export default defineNuxtConfig({
       },
    app:{
     head:{
-      title:"Ahmed El Newery"
+      title:"Ahmed El Newery",
+      link:[ { rel:"icon", href: 'https://raw.github.com/eladnava/material-letter-icons/master/dist/png/A.png' }]
     }
    },
    plugins:[

@@ -20,7 +20,7 @@
           I’ll try my best to get back to you!
         </p>
         <div class="mt-12 flex justify-center items-center">
-          <button class="btn-lg btn-primary">Say Hello!</button>
+          <a class="btn-lg btn-primary cursor-pointer" href="mailto:ahmedm.elenewery@gmail.com"  >Say Hello!</a>
         </div>
       </div>
     </div>

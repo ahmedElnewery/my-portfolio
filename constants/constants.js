@@ -68,7 +68,7 @@ export const projects = [
         title: "Upwork",
         desc: "Connect clients with freelancers ",
         githubUrl: "https://github.com/ahmedElnewery/upwork-clone",
-        url: "upwork-4.web.app",
+        url: "https://upwork-4.web.app",
         tags: ["React", "Node js","Mongodb"]
     },
 ]

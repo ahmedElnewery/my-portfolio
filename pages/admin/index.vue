@@ -7,11 +7,15 @@ const  user = inject("user",null)
 definePageMeta({
   layout: "admin",
 });
-
+onMounted(()=>{
+  if(!user){
+    navigateTo("/login")
+  }
+})
 </script>
 <template>
   <NuxtLayout name="admin">
-    <div>
+    <div class="text-center m-auto">
     <p v-if="user">hello {{user.email}}</p>
     <div v-else>
       please login ..

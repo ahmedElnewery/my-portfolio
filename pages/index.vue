@@ -15,7 +15,7 @@
            <p> I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products .</p>
         </div>
         <div>
-            <a class="inline-block btn-primary btn-lg tracking-wide cursor-pointer">Check out My CV !</a>
+            <a class="inline-block btn-primary btn-lg tracking-wide cursor-pointer" href="https://drive.google.com/file/d/11m0H9arqE5AxqrATF-AlG2PmmAyRO_m8/view?usp=sharing" target="blank">Check out My CV !</a>
         </div>
     </div>
    </section>
