@@ -1,37 +1,44 @@
 
 
 <script setup>
-import {experiences} from "./../../constants/constants";
 import {format} from "date-fns";
 import BriefCase from './../icons/BriefCase.vue'
+
+const {data:experiences}=  useFetch("/api/experiences")
+
 const state = reactive({
-  selectedCompanyId: "1",
+  selectedCompanyId:"",
 });
+
+onMounted(()=>{
+  state.selectedCompanyId =experiences.value ? experiences.value[0].id:""
+})
+
 // computed
 const companies = computed(() => {
-  return experiences.map((work) => ({
+  return experiences.value.map((work) =>  ({
     id: work.id,
     companyName: work.company,
   }));
 });
 
 const showTabContent = computed(() => {
-  return state.selectedCompanyId === selectedWorkExperience.value.id;
+  return state.selectedCompanyId === selectedWorkExperience.value?.id;
 });
 
 const selectedWorkExperience = computed(() => {
-  return experiences.find(
+  return experiences.value.find(
     (work) => work.id === state.selectedCompanyId
   );
 });
 const selectedWorkExperienceStartDate = () => {
-  return format(new Date(selectedWorkExperience.value.startDate), "MMMM yyyy");
+  return format(new Date(selectedWorkExperience.value?.startDate), "MMMM yyyy");
 }
 const selectedWorkExperienceEndDate= computed(()=>{
-  if (selectedWorkExperience.value.endDate === null){
+  if (selectedWorkExperience.value?.endDate === null){
     return "Present"
   } else {
-    const endDate = new Date(selectedWorkExperience.value.endDate)
+    const endDate = new Date(selectedWorkExperience.value?.endDate)
     const now = new Date()
   
     return format(endDate,"MMMM yyyy")
@@ -44,7 +51,7 @@ const updateSelectedCompanyId = (id) => {
 };
 </script>
 <template>
-  <section class="section " id="experience">
+  <section  class="section " id="experience">
     <BaseTitle :icon="BriefCase">Where I’ve Worked </BaseTitle>
     <div class="flex gap-x-8">
       <div>
@@ -63,13 +70,13 @@ const updateSelectedCompanyId = (id) => {
 
       <div>
         <Transition name="fade" mode="out-in">
-          <div v-if="showTabContent" :key="state.selectedCompanyId">
+          <div v-if="showTabContent"  :key="state.selectedCompanyId">
             <p class="text-xl font-medium">
               <span class="text-lightest-slate">{{
-                selectedWorkExperience.title
+                selectedWorkExperience?.title
               }}</span>
               <a class="text-green cursor-pointer">
-                @{{ selectedWorkExperience.company }}</a
+                @{{ selectedWorkExperience?.company }}</a
               >
             </p>
             <p class="text-light-slate text-sm font-mono mb-6">

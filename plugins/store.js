@@ -1,4 +1,3 @@
-import Particles from "vue3-particles/src/components/index";
 
 export default defineNuxtPlugin((nuxtApp) => {
     if (process.client) {
