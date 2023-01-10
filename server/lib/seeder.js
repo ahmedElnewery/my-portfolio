@@ -80,26 +80,34 @@ const projects = [
         tags: ["React", "Node js","Mongodb"]
     },
 ]
-//  function seed() {
-//     try {
-//         experiences.forEach((experience) => {
+ const skills = [
+    "Javascript (Es6 and beyond)",
+    "React",
+    "Vue",
+     "State management (Redux, Vuex)",
+    "Server Side Rendering (Next , Nuxt)",
+    "Unit Testing (Jest)"
+]
+ function seed() {
+    try {
+        experiences.forEach((experience) => {
 
-//             addDoc(collection(db, "experiences"), {
-//                 company: experience.company,
-//                 title: experience.title,
-//                 startDate: experience.startDate,
-//                 endDate: experience.endDate,
-//                 achievements: experience.achievements,
-//             })
+            addDoc(collection(db, "experiences"), {
+                company: experience.company,
+                title: experience.title,
+                startDate: experience.startDate,
+                endDate: experience.endDate,
+                achievements: experience.achievements,
+            })
 
-//         })
-//         console.log("seeding successfully")
-//     } catch (error) {
-//         console.log("err in seeding ")
+        })
+        console.log("seeding successfully")
+    } catch (error) {
+        console.log("err in seeding ")
 
-//     }
+    }
 
-// }
+}
 function seedProjects(){
         try {
         projects.forEach((project) => {
@@ -119,6 +127,22 @@ function seedProjects(){
 
     }
 }
-// seed()
-seedProjects()
+function seedSkills(){
+        try {
+        skills.forEach((skill) => {
 
+            addDoc(collection(db, "skills"), {
+                value:skill
+            })
+
+        })
+        console.log("seeding successfully")
+    } catch (error) {
+        console.log(error)
+        console.log("err in seeding ")
+
+    }
+}
+// seed()
+// seedProjects()
+seedSkills()

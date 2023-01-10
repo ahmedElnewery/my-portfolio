@@ -1,6 +1,6 @@
 
 import {db} from './../../lib/firebase'
-import { collection,getDocs,query,orderBy } from "firebase/firestore"; 
+import { collection,getDocs } from "firebase/firestore"; 
 export default defineEventHandler(async (event) => {
     const projectsCol =  collection(db,"projects")
     const projectsSnap = await getDocs(projectsCol)

@@ -1,10 +1,9 @@
-// import seed from '../config/seeder'
 import Message from './../components/icons/Message.vue'
 import BriefCase from './../components/icons/BriefCase.vue'
 import Code from './../components/icons/Code.vue'
 import Send from './../components/icons/Send.vue'
 import Home from './../components/icons/Home.vue'
-// seed()
+
 
 
 export const navbar = [
@@ -15,51 +14,7 @@ export const navbar = [
     { label: "Contact", path: "/contact",icon:Send },
 ]
 
-export const projects = [
 
-    {
-        id: "1",
-        title: "Trello Clone",
-        desc: "Trello is a collaboration tool that organizes your projects into boards. In one glance, Trello tells you what's being worked on,   who's working on what, and where something is in a process.",
-        githubUrl: "https://github.com/ahmedElnewery/trello-clone/",
-        url: "https://mario130.github.io/trello-clone/welcome-page/welcome.html",
-        tags: ["Jquery", "Boostrap", "DnD"]
-    },
-    {
-        id: "2",
-        title: "Buger builder",
-        desc: "Design and develop app that users can choose their favorite burger and order it. ",
-        githubUrl: "https://github.com/ahmedElnewery/buger-builder",
-        url: "https://ahmedelnewery.github.io/",
-        tags: ["React", "Redux", "Firebase"]
-    },
-    {
-        id: "3",
-        title: "Social media app",
-        desc: "Interact with your friends",
-        githubUrl: "https://github.com/ahmedElnewery/social-media-app",
-        url: "",
-        tags: ["React", "socket io"]
-    },
-    {
-        id: "4",
-        title: "Upwork",
-        desc: "Connect clients with freelancers ",
-        githubUrl: "https://github.com/ahmedElnewery/upwork-clone",
-        url: "https://upwork-4.web.app",
-        tags: ["React", "Node js","Mongodb"]
-    },
-]
-
-
-export const skills = [
-    "Javascript (Es6 and beyond)",
-    "React",
-    "Vue",
-     "State management (Redux, Vuex)",
-    "Server Side Rendering (Next , Nuxt)",
-    "Unit Testing (Jest)"
-]
 export const options = {
     particles: {
       number: {

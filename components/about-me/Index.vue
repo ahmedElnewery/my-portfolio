@@ -3,7 +3,9 @@
 <script setup>
 import Message from "./../icons/Message.vue";
 import profileImg from './../../assets/img/profile_photo.jpeg'
-import {skills} from './../../constants/constants.js'
+const {data:skills}= await useFetch("/api/skills")
+
+
 </script>
 <template>
   <section class="section " id="about">
