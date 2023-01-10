@@ -4,19 +4,17 @@
 import {format} from "date-fns";
 import BriefCase from './../icons/BriefCase.vue'
 
-const {data:experiences}=  useFetch("/api/experiences")
+
+const {data:experiences}= await useFetch("/api/experiences")
 
 const state = reactive({
   selectedCompanyId:"",
 });
-
-onMounted(()=>{
-  state.selectedCompanyId =experiences.value ? experiences.value[0].id:""
-})
+ state.selectedCompanyId = experiences.value ? experiences.value[0]?.id:""
 
 // computed
 const companies = computed(() => {
-  return experiences.value.map((work) =>  ({
+  return experiences.value?.map((work) =>  ({
     id: work.id,
     companyName: work.company,
   }));
@@ -27,13 +25,13 @@ const showTabContent = computed(() => {
 });
 
 const selectedWorkExperience = computed(() => {
-  return experiences.value.find(
+  return experiences.value?.find(
     (work) => work.id === state.selectedCompanyId
   );
 });
-const selectedWorkExperienceStartDate = () => {
+const selectedWorkExperienceStartDate = computed(() => {
   return format(new Date(selectedWorkExperience.value?.startDate), "MMMM yyyy");
-}
+})
 const selectedWorkExperienceEndDate= computed(()=>{
   if (selectedWorkExperience.value?.endDate === null){
     return "Present"
@@ -80,7 +78,7 @@ const updateSelectedCompanyId = (id) => {
               >
             </p>
             <p class="text-light-slate text-sm font-mono mb-6">
-              <span>{{ selectedWorkExperienceStartDate() }}</span> -
+              <span>{{ selectedWorkExperienceStartDate }}</span> -
               <span>{{ selectedWorkExperienceEndDate }}</span>
             </p>
             <ul>

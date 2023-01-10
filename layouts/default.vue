@@ -10,13 +10,13 @@ const particlesInit = async (engine) => {
 };
 </script>
 <template>
-  <div class="min-h-screen">
+  <div class="min-h-screen" >
     <Particles
       id="tsparticles"
       :particlesInit="particlesInit"
       :options="options"
     />
-    <div class="relative z-10">
+    <div class="relative z-10" >
       <!-- <header class="w-full sticky top-0">
         <nav class="flex items-center justify-between py-4 px-12 h-24">
           <NuxtLink to="/" class="text-green w-10 h-10 flex-shrink-0"
@@ -127,9 +127,12 @@ const particlesInit = async (engine) => {
           flex items-center
         "
       >
-        <main class="w-full">
+        <Transition name="rotate" mode="out-in">
+
+        <main class="w-full" :key="$route.fullPath">
           <slot />
         </main>
+        </Transition>
       </div>
     </div>
   </div>

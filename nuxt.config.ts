@@ -8,6 +8,7 @@ export default defineNuxtConfig({
         },
       },
    app:{
+    // pageTransition: { name: 'page', mode: 'out-in' },
     head:{
       title:"Ahmed El Newery",
       link:[ { rel:"icon", href: 'https://raw.github.com/eladnava/material-letter-icons/master/dist/png/A.png' }]

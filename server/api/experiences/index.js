@@ -1,16 +1,17 @@
 
 import {db} from './../../lib/firebase'
-import { collection,getDocs } from "firebase/firestore"; 
+import { collection,getDocs,query,orderBy } from "firebase/firestore"; 
 export default defineEventHandler(async (event) => {
     const experiencesCol =  collection(db,"experiences")
-    const experiencesSnap = await getDocs(experiencesCol)
+    const q =  query(experiencesCol,orderBy("startDate","desc"))
+    const experiencesSnap = await getDocs(q)
     const experiencesData = []
     experiencesSnap.forEach((doc) => {
         // doc.data() is never undefined for query doc snapshots
         experiencesData.push({id:doc.id,
         ...doc.data(),
-        startDate:doc.data().startDate.toDate(),
-        endDate:doc.data().endDate ? doc.data().endDate.toDate(): null,
+        startDate:new Date(doc.data().startDate.seconds * 1000),
+        endDate:doc.data().endDate ? new Date(doc.data().endDate.seconds * 1000): null,
         });
       });
 return experiencesData
