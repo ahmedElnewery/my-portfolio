@@ -1,8 +1,9 @@
 
 
 <script setup>
-import { projects } from "./../../constants/constants.js";
 import Code from './../icons/Code.vue'
+const {data:projects}= await useFetch("/api/projects")
+
 </script>
 <template>
   <section class="section" id="projects">
