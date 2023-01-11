@@ -11,7 +11,7 @@ const {data:skills}= await useFetch("/api/skills")
   <section class="section " id="about">
     <BaseTitle :icon="Message">About Me </BaseTitle>
     <div class="w-full">
-      <div class=" w-2/3">
+      <div class=" lg:w-2/3 w-full">
         <div >
         <p class="mb-3" >
             

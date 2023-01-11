@@ -4,6 +4,10 @@
 import { navbar, options } from "./../constants/constants";
 import { loadFull } from "tsparticles";
 
+const isMenuOpen = ref(false)
+const toggleMenu = ()=>{
+  isMenuOpen.value = !isMenuOpen.value
+}
 // particles
 const particlesInit = async (engine) => {
   await loadFull(engine);
@@ -17,23 +21,46 @@ const particlesInit = async (engine) => {
       :options="options"
     />
     <div class="relative z-10" >
-      <!-- <header class="w-full sticky top-0">
-        <nav class="flex items-center justify-between py-4 px-12 h-24">
-          <NuxtLink to="/" class="text-green w-10 h-10 flex-shrink-0"
-            ><Logo />
-          </NuxtLink>
-          <div class="md:flex items-center hidden">
-            <ul class="flex items-center text-13px font-mono">
-              <li class="mx-2.5" v-for="(item, i) in navbar" :key="i">
+      <!-- <header class="w-full  md:hidden block sticky top-0">
+        <nav class="flex items-center justify-between w-full py-4 ">
+            <ul class="flex w-full justify-between items-center text-13px font-mono space-x-2">
+              <li class="" v-for="(item, i) in navbar" :key="i">
                 <NuxtLink :to="item.path" class="navbar-item">{{
                   item.label
                 }}</NuxtLink>
               </li>
             </ul>
-            <button class="btn-primary btn-sm ml-4">Resume</button>
-          </div>
+          
         </nav>
       </header> -->
+    
+      <div class="md:hidden block fixed top-8 right-8 z-30" v-if="!isMenuOpen">
+        <button @click="toggleMenu">
+        <IconsThreeLines/>
+        </button>  
+      </div>
+        <Transition name="fade" mode="out-in">
+      <div class="md:hidden block fixed left-0 right-0 z-40 bg-lightest-navy" v-if="isMenuOpen">
+         <button class="absolute top-8 right-8" @click="toggleMenu">
+        <IconsClose/>
+        </button> 
+           <ul class="flex flex-col  text-sm font-mono shadow-md border-navy shadow-navy  px-2 py-8">
+          <li class="" v-for="(item, i) in navbar" :key="i">
+            <NuxtLink :to="item.path" class="navbar-item mb-2 " @click="toggleMenu">
+              <div class="flex item-center gap-x-4">
+              <component :is="item.icon" />
+                <p>{{item.label}}</p>
+              </div>
+            </NuxtLink>
+          </li>
+          <div class="flex item-center justify-center">
+            <button class="btn-primary btn-sm ml-4 w-1/2">Resume</button>
+          </div>
+        </ul>
+      
+      </div>
+        </Transition>
+
       <div class="w-10 fixed right-10 bottom-0 md:block hidden">
         <ul
           class="
@@ -106,7 +133,7 @@ const particlesInit = async (engine) => {
           </li>
         </ul>
       </div>
-      <div class="w-10 fixed left-10 top-1/2 -translate-y-1/2 md:block hidden">
+      <div class="w-10 fixed md:left-10 md:bottom-auto md:top-1/2 md:-translate-y-1/2 md:block hidden ">
         <ul class="flex flex-col items-center text-sm font-mono border rounded-full min-w-min px-2 py-8">
           <li class="" v-for="(item, i) in navbar" :key="i">
             <NuxtLink :to="item.path" class="navbar-item mb-2">
@@ -117,12 +144,12 @@ const particlesInit = async (engine) => {
       </div>
       <div
         class="
-          w-100
-          min-h-screen
-          py-0
-          px-12
-          md:px-48
           w-full
+          min-h-screen
+          py-8
+          px-4
+          sm:px-12
+          md:px-48
           h-full
           flex items-center
         "
