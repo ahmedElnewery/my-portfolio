@@ -68,8 +68,9 @@ onMounted(()=>{
     <div class="mt-32">
         <a
           class="inline-block btn-primary btn-lg tracking-wide cursor-pointer"
-          href="https://drive.google.com/file/d/11m0H9arqE5AxqrATF-AlG2PmmAyRO_m8/view?usp=sharing"
+          href="https://drive.google.com/drive/u/1/folders/1cH1S4LIAasn3ieQ9Cbrp3dGqVnB3VlTC"
           target="blank"
+          download="Ahmed_Elnewery_CV"
           >Check out My CV !</a
         >
       </div>
