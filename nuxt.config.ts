@@ -28,7 +28,7 @@ export default defineNuxtConfig({
         { property: "og:url", content: "https://elnewery.netlify.app/" },
         { property: "og:title", content: "Ahmed El Newery" },
         { property: "og:description", content: "website" },
-        // { property: "og:image", content: "" },
+        { property: "og:image", content: "~/assets/wide_profile_photo.jpeg" },
         { property: "twitter:card", content: "summary_large_image" },
         { property: "twitter:url", content: "https://elnewery.netlify.app/" },
         { property: "twitter:title", content: "Ahmed El Newery" },
@@ -36,7 +36,7 @@ export default defineNuxtConfig({
         "Ahmed El Newery, Frontend engineer, I am Goal-oriented Full stack developer experienced in front-end , skilled at building optimized and reusable user interface components and design an efficient layout. Optimized solution seeker and challenge lover who loving learning and gaining new experience. ",
 
       },
-        // { property: "twitter:image", content: "" },
+        { property: "twitter:image", content: "~/assets/wide_profile_photo.jpeg" },
       ],
     },
   },
