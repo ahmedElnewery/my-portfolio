@@ -15,9 +15,8 @@
         </div>
         </div>
         <p class="text-base">
-          Although I’m not currently looking for any new opportunities, my inbox
-          is always open. Whether you have a question or just want to say hi,
-          I’ll try my best to get back to you!
+          <span class="text-xl block text-yellow"> My inbox is always open.</span>
+            <span> Whether you want to hire me or just have a question, don't hesitate to contact me.</span>
         </p>
         <div class="mt-12 flex justify-center items-center">
           <a class="btn-lg btn-primary cursor-pointer" href="mailto:ahmedm.elenewery@gmail.com"  >Say Hello!</a>

@@ -25,7 +25,7 @@ module.exports = {
         'green-tint': 'rgba(100,255,218,0.1)',
         'pink': '#f57dff',
         'blue': '#57cbff',
-
+"yellow":"#f9ca24"
       },
       fontSize:{
         "13px":"13px"

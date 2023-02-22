@@ -81,6 +81,7 @@ const particlesInit = async (engine) => {
                 hover:-translate-y-0.5
                 transition-all
               "
+              href="https://github.com/ahmedElnewery/"
             >
               <IconsGithub
             /></a>
@@ -96,6 +97,7 @@ const particlesInit = async (engine) => {
                 hover:-translate-y-0.5
                 transition-all
               "
+              href="https://twitter.com/ahmed_elnewery"
             >
               <IconsTwitter
             /></a>
@@ -111,6 +113,8 @@ const particlesInit = async (engine) => {
                 hover:-translate-y-0.5
                 transition-all
               "
+            href="https://www.linkedin.com/in/ahmed-elnewery/"
+
             >
               <IconsLinkedIn
             /></a>
@@ -127,9 +131,10 @@ const particlesInit = async (engine) => {
                 transition-all
                 mb-8
               "
+             href="mailto:ahmedm.elenewery@gmail.com" 
             >
-              <IconsFacebook
-            /></a>
+              <IconsEmail/>
+          </a>
           </li>
         </ul>
       </div>

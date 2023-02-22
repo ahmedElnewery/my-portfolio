@@ -6,7 +6,7 @@ html {
     scroll-behavior: smooth;
   }
 body{
-@apply bg-navy text-slate text-xl relative;
+@apply  bg-gradient-to-r to-lightest-navy from-navy text-slate text-xl relative;
 font-family: "Calibre",sans-serif;
 -webkit-font-smoothing: antialiased;
 
@@ -52,7 +52,7 @@ font-family: "Calibre",sans-serif;
 /*fade transition*/
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.5s ease;
+  transition: opacity 0.3s ease;
 }
 
 .fade-enter-from,
